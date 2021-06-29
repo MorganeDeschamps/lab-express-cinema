@@ -1,0 +1,16 @@
+<div class="main">
+
+{{#each moviesDB}} 
+
+    <span class="movies-list">
+        <img src="{{image}}" onerror="this.src='/images/noArtistDefault.png';this.onerror='';" alt="album cover">
+        <div class="movies-footer">
+            <h6> {{title}} </h6>
+            <h6><a href="/movies/{{_id}}"> See more </a></h6>
+        </div>
+    </span>
+
+
+{{/each}}
+
+</div>

@@ -1,0 +1,23 @@
+<div class="main">
+
+    <span class="movie-details">
+        <img src="{{image}}" onerror="this.src='/images/noArtistDefault.png';this.onerror='';" alt="movie poster">
+        <div class="movie text">
+            <h3> {{title}} </h3>
+            <h4>Director: {{director}} </h4>
+            <h4>Stars: </h4>
+            <ul class="stars">
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            <h5>
+                {{#each showtimes}}
+                | {{this}} | 
+                {{/each}}
+            </h5>
+        </div>
+    </span>
+
+</div>
